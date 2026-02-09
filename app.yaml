@@ -1,0 +1,13 @@
+services:
+  s99app:
+    image: nginx:alpine
+    container_name: 68-s3-app
+    restart: unless-stopped
+    ports:
+      - "${APP_PORT}:80"
+    networks:
+      - my-network
+    
+networks:
+  my-network:
+    driver: bridge
