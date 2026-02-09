@@ -13,4 +13,3 @@ docker compose -f admin.yaml up -d
 Run the application service (Nginx):
 ```bash
 docker compose -f app.yaml up -d
-
